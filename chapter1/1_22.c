@@ -25,7 +25,6 @@ int main() {
 }
 
 void hlineFull(char line[]) {
-  printf("line full");
   int newLinePos = -1;
   for (int i = 0; i < MAXCOL; i++) {
     if (line[i] == '\n') {
@@ -44,9 +43,11 @@ void hlineFull(char line[]) {
 }
 
 void printLine(char line[], int pos) {
+  int i = 0;
   while (pos >= 0) {
-    putchar(line[pos]);
+    putchar(line[i]);
     pos--;
+    i++;
   }
   putchar('\n');
 }
