@@ -3,7 +3,7 @@
 int hex2int(char s[], int len);
 
 int main() {
-  printf("%d", hex2int("0xff"))
+  printf("%d", hex2int("0x10", 4));
   return 0;
 }
 
@@ -18,7 +18,7 @@ int hex2int(char s[], int len) {
     } else if (s[i] >= 'A' && s[i] <= 'F') {
       item = s[i] - 'A' + 10;
     }
-    rst = 16 * n + item;
+    rst = 16 * rst + item;
   }
   return rst;
 }
