@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+void revert(char[]);
+
+int main() {
+
+  return 0;
+}
+
+void revert(char arr[]) {
+  
+}
