@@ -1,12 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "getch.h"
+#include "floats.h"
+#include "gettop.h"
 
 #define MAXOP 100
 #define NUMBER '0'
 
-int gettop(char []);
-void push(double t);
-double pop(void);
 
 int main() {
   int type;

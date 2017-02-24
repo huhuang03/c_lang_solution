@@ -12,7 +12,7 @@ void push(double f) {
 
 double pop(void) {
   if (sp > 0) {
-    printf val[--sp];
+    return val[--sp];
   } else {
     printf("error: stack empty\n");
     return 0.0;
