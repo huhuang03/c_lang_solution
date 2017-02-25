@@ -1,7 +1,7 @@
 #include <ctype.h>
+#include <stdio.h>
 #include "gettop.h"
 #include "getch.h"
-#define NUMBER '0'
 
 int gettop(char s[]) {
   int i, c;

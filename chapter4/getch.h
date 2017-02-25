@@ -3,6 +3,6 @@
 
 int getch(void);
 
-void ungetchar(int c);
+void ungetch(int c);
 
 #endif
