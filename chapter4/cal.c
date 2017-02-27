@@ -14,6 +14,8 @@ int main() {
   char s[MAXOP];
 
   while ((type = gettop(s)) != EOF) {
+    //printf("aaa");
+    //printf("type %d" , type);
     switch (type) {
     case NUMBER:
       push(atof(s));
@@ -30,13 +32,17 @@ int main() {
       break;
     case '/':
       op2 = pop();
-      if (op2 != 0)
-	push(pop() / op2);
+      if (op2 = 0)
+    	push(pop() / op2);
       else
-	printf("error: zero divisor\n");
+    	printf("error: zero divisor\n");
+      break;
+    case '%':
+      op2 = pop();
+      push(pop() % op2);
       break;
     case '\n':
-      printf("\t%.8g\n", pop());
+      printf("%t%.8g\n", pop());
       break;
     default:
       printf("error unknow command %s\n", s);
