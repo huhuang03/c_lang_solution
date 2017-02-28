@@ -12,6 +12,20 @@ int gettop(char s[]) {
 
   i = 0;
 
+  if (islower(c)) {
+    while (islower(s[++i] = c = getch))
+      ;
+    s[i] = '\0';
+    if (c != EOF) {
+      ungetch(c);
+    }
+    if (strlen(s) > 1) {
+      return NAME;
+    } else {
+      return c;
+    }
+  }
+
   if (c == '-') {
     c = getch();
     ungetch(c);

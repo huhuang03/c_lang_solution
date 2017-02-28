@@ -12,4 +12,6 @@ void doubleTop();
 
 void exchange();
 
+void empty();
+
 #endif
